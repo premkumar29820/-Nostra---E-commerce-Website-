@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <!--Tailwind CSS-->
+    <link rel="stylesheet" href="./src/output.css">
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="./collection.css">
+    <!--font Style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <!--Font awesome CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--Responsive Navbar-->
+    <nav class="navbar">
+
+        <div class="navbar-s1">
+            <h1 class="navbar-s1__title">Nos<span class="font-design">T</span>ra</h1>
+        </div>
+
+        <div class="navbar-s2">
+            <i class="fa-solid fa-magnifying-glass" style="color: rgb(15, 15, 15);"></i>
+            <input placeholder="Search Products,Brands...">
+        </div>
+
+        <div class="navbar-s3">
+            <a href="./index.html" class="nav-menu"><i class="fa-solid fa-house" style="color:rgb(5, 0, 0);"></i></a>
+            <a href="./collection.html" class="nav-menu"><i class="fa-solid fa-cart-shopping" style="color: rgb(11, 0, 0);"></i></a>
+            <span id="count">0</span>
+            <a href="./contact.html" class="nav-menu" id="cart"><i class="fa-solid fa-user" style="color: rgb(17, 0, 0);"></i></a>
+        </div>
+        <div class="navbar-s4" id="menuicon">
+            <i class="fa-solid fa-bars" style="color: rgb(11, 0, 0);"></i>
+        </div>
+    </nav>
+    <!--side Nav-->
+
+        <section id="sidenav" >
+            
+        <div class="close-nav">
+            <p id="closenav"> ✖</p>
+        </div>
+
+        <ul  class="side-menu" >
+            <li>
+                <a  href="./index.html"> <i class="fa-solid fa-house" style="color:rgb(246, 246, 246);"></i>Home</a>
+            </li>
+            <li>
+                <a  href="./collection.html"> <i class="fa-solid fa-shopping-bag" style="color: rgb(255, 251, 251);"></i>Products</a>
+            </li>
+            <li>
+                <a  href="./contact.html"> <i class="fa-solid fa-user" style="color: rgb(241, 238, 238);"></i>Contact</a>
+            </li>
+            <li>
+                <a href="" class="nav-menu"><i class="fa-solid fa-cart-shopping" style="color: rgb(255, 252, 252);"></i> Cart </a>
+             </li>   
+        </ul> 
+    </section>
+
+    <!--product-->
+    <h1 class="collection-h1">COLLECTIONS</h1>
+    <section class="shop-container">
+
+        <div class="filter-menu">
+
+            <h2>Filter</h2>
+
+            <hr>
+            <br>
+
+            <h3>Price Range</h3>
+
+            <p>₹<span id="priceValue">2000</span></p>
+
+
+
+            <input type="range" id="priceRange" min="1300" max="3000" step="100" value="2000">
+
+            <br>
+            <div class="category">
+
+
+                <h3 class="category-h3">Category</h3>
+
+                <hr>
+                <br>
+
+                <label class="input" >
+                    <input type="checkbox" value="cardigan">
+                    Cardigan
+                </label>
+
+                <br>
+
+                <label class="input">
+                    <input type="checkbox" value="cropped">
+                    Cropped
+                </label>
+
+
+                <br>
+
+                <label class="input" >
+                    <input type="checkbox" value="denim">
+                    Denim
+                </label>
+
+                <br>
+
+                <label class="input">
+                    <input type="checkbox" value="jacket">
+                    Jacket
+                </label>
+
+                 <br>
+                 
+                <label class="input">
+                    <input type="checkbox" value="jean">
+                    Jean
+                </label>
+
+                 <br>
+
+                 <label class="input">
+                    <input type="checkbox" value="pant">
+                    Pant
+                </label>
+            </div>
+        </div>
+        <section class="collection">
+
+            <div class="collection-container">
+
+                <div class="collection-card" data-price="1999" data-category="cropped">
+
+                    <img src="./images/col (5).jpg">
+                    <h2>₹1,999</h2>
+                    <span class="overlay">
+                        <p>Cropped</p>
+                        <h4 class="sub">▬</h4>
+                        <h4 class="quick-add">Quick Add ⟶</h4>
+                        <h4 class="add">✚</h4>
+                    </span>
+
+                </div>
+                <div class="collection-card" data-price="2499" data-category="jacket">
+
+                    <img src="./images/col (6).jpg">
+                    <h2>₹2,499</h2>
+                    <span class="overlay">
+                        <p>Denim jacket</p>
+                        <h4 class="sub">▬</h4>
+                        <h4 class="quick-add">Quick Add⟶</h4>
+                        <h4 class="add">✚</h4>
+                    </span>
+                </div>
+
+                <div class="collection-card" data-price="1599" data-category="jean" >
+
+                    <img src="./images/col (7).jpg" >
+                    <h2>₹1,599</h2>
+                    <span class="overlay">
+                        <p>Denim jean</p>
+                        <h4 class="sub">▬</h4>
+                        <h4 class="quick-add">Quick Add⟶</h4>
+                        <h4 class="add">✚</h4>
+                    </span>
+
+                </div>
+                <div class="collection-card" data-price="2899" data-category="pant">
+
+                    <img src="./images/col (2).jpg">
+                    <h2>₹2,899</h2>
+                    <span class="overlay">
+                        <p>Raver Pant</p>
+                        <h4 class="sub">▬</h4>
+                        <h4 class="quick-add">Quick Add ⟶</h4>
+                        <h4 class="add">✚</h4>
+                    </span>
+                </div>
+
+                <div class="collection-card" data-price="3299" data-category="jean">
+
+                    <img src="./images/col (1).jpg">
+                    <h2>₹3,299</h2>
+                    <span class="overlay">
+                        <p>Baggy jean</p>
+                        <h4 class="sub">▬</h4>
+                        <h4 class="quick-add">Quick Add ⟶</h4>
+                        <h4 class="add">✚</h4>
+                    </span>
+
+                </div>
+                <div class="collection-card" data-price="1799" data-category="Cardigan">
+
+                    <img src="./images/col9.jpg" >
+                    <h2>₹1,799</h2>
+                    <span class="overlay">
+                        <p>Cardigan</p>
+                        <h4 class="sub">▬</h4>
+                        <h4 class="quick-add">Quick Add ⟶</h4>
+                        <h4 class="add">✚</h4>
+                    </span>
+
+                </div>
+
+
+
+                <div class="collection-card" data-price="1799" data-category="jean">
+
+                    <img src="./images/col (9).jpg">
+                    <h2>₹2,299</h2>
+                    <span class="overlay">
+                        <p>Bootcut jean</p>
+                        <h4 class="sub">▬</h4>
+                        <h4 class="quick-add">Quick Add ⟶</h4>
+                        <h4 class="add">✚</h4>
+                    </span>
+
+                </div>
+
+                <div class="collection-card" data-price="1499" data-category="denim">
+                    <img src="./images/col (3).jpg">
+                    <h2>₹1,499</h2>
+                    <span class="overlay">
+                        <p>Cotton Denim</p>
+                        <h4 class="sub">▬</h4>
+                        <h4 class="quick-add">Quick Add⟶</h4>
+                        <h4 class="add">✚</h4>
+                    </span>
+                </div>
+
+                <div class="collection-card" data-price="1299"  data-category="cardigan">
+                    <img src="./images/col (4).jpg">
+                    <h2>₹1,299</h2>
+                    <span class="overlay">
+                        <p>Croochet Cardigan</p>
+                        <h4 class="sub">▬</h4>
+                        <h4 class="quick-add">Quick Add ⟶</h4>
+                        <h4 class="add">✚</h4>
+                    </span>
+                </div>
+                <p id="not-found">
+                    ☹ No products found.
+                </p>
+            </div>
+        </section>
+    </section>
+    <!--News Letter-->
+    <section class="news-letter">
+        <h1 class="letter-head"> Join the Nos<span class="font-design">T</span>ra Club</h1>
+        <span class="letter-content">
+            <p class="letter-desc">Get early access to drops, exclusive discounts,and style tips straight to your
+                inbox.</p>
+            <span class="letter-input">
+                <input class="letter-email" type="email" placeholder="Enter your Email...">
+                <button class="letter-btn">Subscribe</button>
+            </span>
+        </span>
+
+    </section>
+    <!--Footer-->
+    <section class="footer">
+        <span class="footer-1">
+            <h1 class="footer__title">Nos<span class="font-design">T</span>ra</h1>
+            <p>Premium streetwear for those who set the trends rather than follow them. Quality you can feel.</p>
+            <h4>@ 2026 Nostra.com</h4>
+        </span>
+
+        <div class="footer-2">
+            <h3 class="footer_title">Help</h3>
+            <p class="footer_para">Contact Us</p>
+            <p class="footer_para">Sizing Guide</p>
+            <p class="footer_para">Shipping Info</p>
+            <p class="footer_para">Returns</p>
+        </div>
+
+        <div class="footer-3">
+            <h3 class="footer_title">Company</h3>
+            <p class="footer_para">About Us</p>
+            <p class="footer_para">Sizing Guide</p>
+            <p class="footer_para">Privacy Policy</p>
+            <p class="footer_para">Terms of Use</p>
+        </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </section>
+
+    <button id="scrollTopBtn">
+        ↑
+    </button>
+
+    <script src="collection.js"></script>
+
+</body>
+
+</html>

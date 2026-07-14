@@ -1,0 +1,459 @@
+body {
+    font-family: "Libre Baskerville", serif;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    
+}
+
+.navbar-s1__title {
+     color: black;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.font-design {
+    font-size: 45px;
+    color: gold;
+}
+
+
+
+.navbar-s2 input {
+    color:black;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    
+}
+
+.navbar-s2 input:focus {
+    outline: none;
+}
+
+.navbar-s3 {
+    font-size: 25px;
+    position: relative;
+}
+
+#sidenav{
+    display: flex;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    right: -60%;
+   transition: right .4s ease;
+}
+.close-nav{
+    text-align:right;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color:white;
+}
+
+.side-menu{
+    color: white;
+    display: grid;
+    grid-template-rows: 100px 100px  100px 100px;
+    margin-top: 22%;
+}
+
+.side-menu a:hover{
+    color: red;
+    text-decoration:underline;
+}
+
+
+.navbar-s4 {
+    display: none;
+}
+
+.contact-form{
+    display:flex;
+    padding:80px 20px;
+    background: url(./images/ad-bg.jpg);
+ 
+    justify-content: space-evenly;
+}
+
+.content{
+    width: 600px;
+}
+.title-1{
+    color: white;
+    margin-top: 20%;
+    margin-bottom:10px ;
+}
+.title-2{
+    font-size: 60px;
+    color: gold;
+  font-style: oblique;
+}
+.desc{
+    font-size: 20px;
+    color:white;
+}
+
+
+
+.form{
+width:340px;
+height:440px;
+background:whitesmoke;
+border-radius:8px;
+box-shadow:0 0 40px -10px #000;
+margin:0;
+padding:20px 30px;
+position:relative;
+}
+h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:black;
+    border-bottom:3px solid #78788c
+}
+
+input{
+    width:100%; 
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition:all .3s;border-bottom:2px solid #b4aeae}
+input:focus{
+    border-bottom:2px solid #78788c;
+}
+p:before{
+    content:attr(type);
+    display:block;
+    margin-bottom:20px;
+    font-size:14px;
+    color:black;
+}
+.con-btn{
+    float:right;
+    border: solid transparent 2px;
+    padding:8px 12px;
+    margin:8px 0 0;
+    background:black;
+    color: white;
+    cursor:pointer;
+    transition:all .3s;
+    border-radius: 10px;
+}
+.con-btn:hover{
+    background:white;
+    color:black;
+    border: solid black 2px;
+}
+.info{
+    content:'Hi';position:absolute;
+    bottom:-20px;left:80px;
+    background:red;
+    color:black;
+    width:350px;
+    padding:10px 4px 10px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000;
+    overflow-x: hidden;
+}
+#phone,#email{
+    margin:0 5px 0 15px
+}
+
+
+
+/* footer */
+.footer {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    background-color: black;
+    color: gray;
+    cursor: pointer;
+}
+
+.footer-1 {
+    position: relative;
+    margin: 20px;
+}
+
+.footer__title {
+    color: white;
+    width: auto;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.footer-1 p {
+    font-size: 20px;
+    width: 70%;
+}
+
+.footer-1 h4 {
+    position: absolute;
+    bottom: -17%;
+    color: gray;
+}
+
+.footer-social {
+    font-size: 25px;
+    margin: 20px;
+    color: gray;
+}
+.footer-social a:hover{
+    color: white;
+}
+
+.footer_title {
+    display: flex;
+    font-size: 20px;
+    margin: 20px;
+    margin-top: 30px;
+    color: rgb(185, 179, 145);
+}
+
+.footer_para {
+    font-size: 14px;
+    display: flex;
+    margin: 20px;
+    color: gray;
+}
+
+.footer_para:hover {
+    color: white;
+}
+
+#scrollTopBtn {
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color:white;
+    color:black;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    display: none;
+
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+    background-color: red;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:767px){
+
+/* Navbar */
+
+.navbar{
+    padding:15px;
+}
+
+.navbar-s3{
+    display:none;
+}
+
+.navbar-s4{
+    display:block;
+    font-size:25px;
+}
+
+
+
+/* Contact Section */
+
+.contact-form{
+    flex-direction:column;
+    align-items:center;
+    gap:50px;
+    padding:40px 20px;
+}
+
+.content{
+    width:100%;
+    text-align:center;
+}
+
+.title-1{
+    margin-top:0;
+    font-size:30px;
+}
+
+.title-2{
+    font-size:35px;
+}
+
+.desc{
+    font-size:16px;
+}
+
+/* Form */
+
+.form{
+    width:100%;
+    max-width:350px;
+    height:auto;
+    padding:20px;
+}
+
+.form h2{
+    width:100%;
+    text-align:center;
+}
+
+
+.info{
+    width:100%;
+    text-align:center;
+    left:0;
+      bottom:-25px;
+   
+}
+
+/* Footer */
+
+.footer{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.footer-1{
+    margin:10px;
+}
+
+.footer-1 p{
+    width:100%;
+}
+
+.footer-1 h4{
+    position:static;
+    margin-top:20px;
+}
+
+.footer_title{
+    justify-content:center;
+}
+
+.footer_para{
+    justify-content:center;
+}
+
+.footer-social{
+    text-align:center;
+}
+
+.footer-social a{
+    margin:0 10px;
+}
+
+/* Scroll Button */
+
+#scrollTopBtn{
+    width:45px;
+    height:45px;
+    font-size:18px;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+/* Navbar */
+
+.navbar{
+    padding:15px 20px;
+}
+
+.navbar-s1__title{
+    font-size:35px;
+}
+
+/* Side Navigation */
+
+#sidenav{
+    width:50%;
+    right:-50%;
+}
+
+/* Contact */
+
+.contact-form{
+    gap:40px;
+    padding:50px 30px;
+}
+
+.content{
+    width:45%;
+}
+
+.title-1{
+    margin-top:10%;
+}
+
+.title-2{
+    font-size:40px;
+}
+
+.desc{
+    font-size:18px;
+}
+
+.form{
+    width:320px;
+}
+
+.info{
+   
+    left: -30%;
+    bottom:-25px;
+}
+
+/* Footer */
+
+.footer{
+    grid-template-columns:2fr 1fr 1fr;
+}
+
+.footer-1 p{
+    width:90%;
+}
+
+
+
+}
