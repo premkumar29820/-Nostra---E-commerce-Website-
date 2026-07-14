@@ -1,12 +1,18 @@
 body {
     font-family: "Libre Baskerville", serif;
-    
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+}
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .navbar {
-
     display: flex;
     justify-content: space-between;
     background-color:white;
@@ -17,6 +23,8 @@ body {
     z-index: 10;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
+    padding-right: 10px;
+     padding-left: 10px;
     
 }
 
@@ -82,6 +90,9 @@ body {
     color: red;
     text-decoration:underline;
 }
+.side-menu a{
+    color: white;
+}
 
 
 .navbar-s4 {
@@ -113,8 +124,6 @@ body {
     font-size: 20px;
     color:white;
 }
-
-
 
 .form{
 width:340px;
@@ -179,7 +188,7 @@ p:before{
     border-radius:6px;
     font-size:13px;
     box-shadow:10px 10px 40px -14px #000;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 #phone,#email{
     margin:0 5px 0 15px
@@ -227,6 +236,10 @@ p:before{
 }
 .footer-social a:hover{
     color: white;
+}
+
+.footer-social a{
+    color: gray;  
 }
 
 .footer_title {
@@ -282,7 +295,7 @@ p:before{
 /* Navbar */
 
 .navbar{
-    padding:15px;
+    padding-right: 5px;
 }
 
 .navbar-s3{
@@ -397,7 +410,7 @@ p:before{
 /* Navbar */
 
 .navbar{
-    padding:15px 20px;
+    padding:5px;
 }
 
 .navbar-s1__title{
@@ -453,7 +466,5 @@ p:before{
 .footer-1 p{
     width:90%;
 }
-
-
 
 }
