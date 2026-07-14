@@ -1031,7 +1031,7 @@ a{
     .image {
         width: 200px;
         height: 280px;
-        margin-left: 90px;
+        margin-left: 70px;
 
 
     }
@@ -1040,7 +1040,7 @@ a{
     .image.left-2,
     .image.right-1,
     .image.right-2 {
-        display: none;
+        display:block;
     }
 
     .image.center {
@@ -1050,9 +1050,29 @@ a{
         height: 320px;
 
         transform: none;
-        left:34%;
+        left:30%;
         transform: translateX(-50%);
     }
+   .image.left-1 {
+    transform: translateX(-100px) scale(0.9) translatez(-100px);
+}
+
+.image.left-2 {
+    transform: translateX(-200px) scale(0.8) translatez(-100px);
+}
+
+.image.right-1 {
+    transform: translateX(100px) scale(0.9) translatez(-100px);
+}
+
+.image.right-2 {
+    transform: translateX( -100px) scale(0.8) translatez(-100px);
+}
+
+.image.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 
     .arrow {
         width: 50px;
